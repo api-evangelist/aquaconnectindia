@@ -1,23 +1,64 @@
 aid: aquaconnectindia
+
 name: Aquaconnectindia
-description: 'Aquaconnectindia is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Aquaconnect is a full‑stack technology platform that uses AI and satellite remote sensing to bring transparency and efficient market linkages to the aquaculture value chain across South Asia. It connects producers, exporters, and regulators, offering tools for sustainable aqua farming, hatchery management, and trade facilitation.'
+
 url: https://raw.githubusercontent.com/api-evangelist/aquaconnectindia/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- Aquaculture
+- Technology
+- AI
+- Satellite
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/aquaconnectindia-hosts.yml
+- type: Vendors
+  url: vendors/aquaconnectindia-vendors.yml
+- type: PrivacyPolicy
+  url: https://aquaconnect.blue/privacy_policy.html
+- type: GitHubOrganization
+  url: https://github.com/aquaconnect
+- type: DomainSecurity
+  url: security/aquaconnectindia-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/aquaconnectindia
+  url: https://aquaconnect.blue
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public API documentation or developer program is available on the company's website.
+  evidence:
+    - url: https://aquaconnect.blue
+      status: 200
+  checked: 2026-09-25
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
